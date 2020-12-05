@@ -110,6 +110,7 @@ a {
   z-index:2;
   background-color: rgba(189,26,33,0.85);
   background-size: cover;
+  text-align:center;
   display:flex;
   align-items:center;
   jistify-content:center;
