@@ -285,7 +285,7 @@ a {
   /* ---冒頭ボタン--- */
   .container{
     position: absolute;
-    bottom: 70px;
+    bottom: 85px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
