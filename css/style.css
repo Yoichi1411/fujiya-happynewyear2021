@@ -111,12 +111,12 @@ a {
   background-color: rgba(189,26,33,0.85);
   background-size: cover;
   display:flex;
-  jistify-content:center;
   align-items:center;
+  jistify-content:center;
 }
 
 .bg-torii{
-  width:80%;
+  width:50%;
 }
 
 
