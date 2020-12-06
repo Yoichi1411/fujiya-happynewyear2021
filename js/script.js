@@ -33,12 +33,15 @@ $(function(){
     },5200);
 
     //おみくじ結果の処理
-    var results = ["大吉","中吉","小吉","吉","凶"];
+    var results = ['image/result-daikichi1.png',
+                   'image/result-chukichi1.png',
+                   'image/result-syokichi1.png',
+                   'image/result-kichi1.png'];
 
 
-    var random = Math.floor(Math.random() * 5);
-    var result = results[random];
-    $('#result').html(result);
+    var random = results[Math.floor(Math.random() * results.length)];
+
+    $('.result').attr('src',random);
 
 
 
