@@ -92,11 +92,19 @@ $(function(){
   });
 });
 
+
+
+
+
 //ページ読み込み後の実行プログラム
 window.onload = function() {
-  //ローディング画面からの切り替え
+  //ローディング画面をフェードアウト
   const loader = document.getElementById('loading-wrapper');
   loader.classList.add('completed');
+
+  //冒頭アニメーションをフェードイン
+  $('.background-wrapper').fadeIn(1000);
+
 
   //冒頭アニメーションからのボタンページフェードイン
   setTimeout(function(){
