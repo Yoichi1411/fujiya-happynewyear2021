@@ -127,7 +127,7 @@ a {
 
 .container{
   position: absolute;
-  bottom: 50px;
+  bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -167,6 +167,7 @@ a {
   font-family: sans-serif;
   left: 50%;
   transform: translateX(-50%);
+  opacity: 0.7;
 }
 
 
@@ -207,8 +208,11 @@ a {
   letter-spacing: 3px;
   line-height: 35px;
   background-color:rgba(140,19,25,0.6);
-  padding: 15px 25px;
   border-radius: 10px;
+}
+
+.sentence-mini{
+  padding: 15px 25px;
 }
 
 .sentence-big{
@@ -227,6 +231,7 @@ a {
 
 .sign-nagata{
   width:28%;
+  padding-bottom: 13px;
 }
 
 
@@ -309,7 +314,7 @@ a {
   /* ---冒頭ボタン--- */
   .container{
     position: absolute;
-    bottom: 80px;
+    bottom: 70px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -335,12 +340,14 @@ a {
 
   .copyright{
     position: absolute;
-    bottom: 50px;
+    width: 80%;
+    bottom: 40px;
     font-size: 8px;
     color: white;
     font-family: sans-serif;
     left: 50%;
     transform: translateX(-50%);
+    opacity: 0.5;
   }
 
 
@@ -394,11 +401,15 @@ a {
   }
 
   .sentence{
-    font-size: 11px;
+    font-size: 12px;
     margin: 10px 0;
     letter-spacing: 1px;
-    line-height: 23px;
-    padding: 8px 12px;
+    line-height: 18px;
+  }
+
+  .sentence-mini{
+    padding: 0 3px;
+    padding-top: 16px;
   }
 
   .sentence-big{
@@ -406,13 +417,13 @@ a {
   }
 
   .day{
-    font-size: 9px;
-    margin-top: 18px;
+    font-size: 10px;
+    margin-top: 13px;
   }
 
   .president-title{
     font-size: 7px;
-    margin: 5px 0;
+    margin: 3px 0;
   }
 
   .sign-nagata{
