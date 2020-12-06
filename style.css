@@ -1,0 +1,404 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+
+
+/* ---背景動画--- */
+.background-wrapper{
+  width:100%;
+  height: 100vh;
+  position: fixed;
+}
+
+.fitVideo{
+  z-index: 1;
+}
+
+.video1{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.video2{
+  display:none;
+}
+
+
+/* ---おみくじ--- */
+.omikuji-wrapper{
+  position:relative;
+  width: 100%;
+  height:100vh;
+  text-align: center;
+  display:none;
+}
+
+.omikuji-video{
+  position: relative;
+  min-width: 300px;
+  max-width: 700px;
+  top:50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+
+.omikuji-result{
+  position: relative;
+  width:100%;
+  height: 100vh;
+  text-align: center;
+  display: none;
+  padding-top: 20%;
+}
+
+.result-title{
+  position: relative;
+  width:35%;
+  z-index: 6;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.result{
+  position: relative;
+  width: 50%;
+  margin-top: 50px;
+  z-index: 6;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.kaisetsu{
+  position: relative;
+  color: white;
+  font-size: 20px;
+  font-family: serif;
+  margin-top: 25px;
+  z-index: 6;
+}
+
+
+/*-- おみくじ背景 --*/
+.omikuji-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100vh;
+  z-index:2;
+  background-color: rgba(189,26,33,0.85);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-torii{
+  width:50%;
+}
+
+
+
+/* ---冒頭ボタン--- */
+.btn-wrapper{
+  position:relative;
+  width:100vw;
+  height: 100vh;
+  display: none;
+}
+
+.container{
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  display: flex;
+  height: auto;
+}
+
+.btn{
+	margin: 10px 50px;
+	opacity:0.8;
+  cursor: pointer;
+  width: 180px;
+  align-self: flex-start;
+}
+
+.btn:hover{
+	opacity:1;
+}
+
+.logo{
+
+}
+
+.greeting{
+
+}
+
+.omikuji-btn{
+
+}
+
+.copyright{
+  position: absolute;
+  bottom: 20px;
+  font-size: 12px;
+  color: white;
+  font-family: sans-serif;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+/* ---新年の挨拶--- */
+.greeting-wrapper{
+  z-index: 2;
+  width:100%;
+  height: 100vh;
+  display: none;
+  position: relative;
+  background-color: rgba(189,26,33,0.85);
+  background-size: cover;
+}
+
+.container2{
+  padding-top: 3%;
+  width:50%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.greeting-title{
+  color: white;
+  font-family: serif;
+  font-size: 65px;
+  letter-spacing: 15px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sentence{
+  color:white;
+  font-family: serif;
+  font-size: 23px;
+  margin: 10px 0;
+  letter-spacing: 3px;
+  line-height: 35px;
+  background-color:rgba(140,19,25,0.6);
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+
+.sentence-big{
+  font-size: 30px;
+}
+
+.day{
+  font-size: 21px;
+  margin-top: 18px;
+}
+
+.president-title{
+  font-size: 17px;
+  margin: 5px 0;
+}
+
+.sign-nagata{
+  width:28%;
+}
+
+
+.president-name{
+  height:30px;
+  width:100%;
+  margin-top: 25px;
+}
+
+.president-name img{
+  width:200px;
+}
+
+.totop-btn{
+  position: relative;
+  margin: 80px 0;
+  width: 160px;
+  cursor: pointer;
+  opacity: 0.8;
+  z-index: 8;
+}
+
+.totop-btn:hover{
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --レスポンシブ(タブレット)-- */
+@media(max-width:992px) {
+
+  .btn{
+  	font-size: 18px;
+  	border-radius: 5px;
+  	margin: 8px 12px;
+  	letter-spacing: 2px;
+    width:130px;
+    padding: 5px 0;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --レスポンシブ(スマホ)-- */
+@media(max-width:688px) {
+
+  /* ---背景動画--- */
+  .video1{
+    display: none;
+  }
+
+  .video2{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+
+  /* ---冒頭ボタン--- */
+  .container{
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    display:flex;
+  }
+
+  .btn{
+    display:inline-block;
+  	margin: 0 8px;
+  }
+
+  .logo{
+    width: 92px;
+  }
+
+  .greeting{
+    width: 92px;
+  }
+
+  .omikuji-btn{
+    width: 92px;
+  }
+
+
+  /* ---おみくじ--- */
+  .omikuji-video{
+    min-width: 280px;
+    max-width: 280px;
+    padding-top: 60px;
+  }
+
+  .omikuji-result{
+    padding-top: 30%;
+    width:100%;
+  }
+
+  .result-title{
+    width: 50%;
+  }
+
+  .result{
+    width: 65%;
+    margin-top: 35px;
+  }
+
+  .kaisetsu{
+    font-size: 20px;
+    font-family: serif;
+    margin-top: 20px;
+    width:85%;
+    margin: 0 auto;
+  }
+
+
+  /* ---新年の挨拶--- */
+  .container2{
+    padding-top: 15%;
+    width:85%;
+  }
+
+  .greeting-title{
+    font-size: 40px;
+    letter-spacing: 8px;
+    margin-bottom: 12px;
+  }
+
+  .sentence{
+    font-size: 13px;
+    margin: 10px 0;
+    letter-spacing: 1px;
+    line-height: 23px;
+    padding: 8px 12px;
+  }
+
+  .president-name img{
+    width:100px;
+  }
+
+  .totop-btn{
+    margin: 28px 0;
+    width: 92px;
+  }
+
+}
