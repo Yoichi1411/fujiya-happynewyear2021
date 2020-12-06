@@ -314,7 +314,7 @@ a {
   /* ---冒頭ボタン--- */
   .container{
     position: absolute;
-    bottom: 70px;
+    bottom: 80px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -364,12 +364,8 @@ a {
   }
 
   .result-title{
-    width: 50%;
-  }
-
-  .result-title{
     position: relative;
-    width:35%;
+    width:60%;
     z-index: 6;
     display: block;
     left: 50%;
@@ -378,12 +374,16 @@ a {
 
   .result{
     position: relative;
-    width: 50%;
+    width: 80%;
     margin-top: 50px;
     z-index: 6;
     display: block;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .bg-torii{
+    width:85%;
   }
 
 
