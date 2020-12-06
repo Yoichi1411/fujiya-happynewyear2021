@@ -61,6 +61,8 @@ a {
   position: relative;
   min-width: 300px;
   max-width: 700px;
+  top:50%;
+  transform: translateY(-50%);
   z-index: 5;
 }
 
@@ -75,29 +77,23 @@ a {
 
 .result-title{
   position: relative;
-  color:white;
-  font-size: 30px;
+  width:35%;
   z-index: 6;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .result{
   position: relative;
-  color: #c8ae6b;
-  font-size: 80px;
-  font-weight: bold;
-  font-family: serif;
+  width: 50%;
   margin-top: 50px;
   z-index: 6;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.kaisetsu{
-  position: relative;
-  color: white;
-  font-size: 20px;
-  font-family: serif;
-  margin-top: 25px;
-  z-index: 6;
-}
 
 
 /*-- おみくじ背景 --*/
@@ -116,7 +112,7 @@ a {
 }
 
 .bg-torii{
-  width:80%;
+  width:50%;
 }
 
 
@@ -143,7 +139,7 @@ a {
 	margin: 10px 50px;
 	opacity:0.8;
   cursor: pointer;
-  width: 160px;
+  width: 180px;
   align-self: flex-start;
 }
 
@@ -161,6 +157,16 @@ a {
 
 .omikuji-btn{
 
+}
+
+.copyright{
+  position: absolute;
+  bottom: 20px;
+  font-size: 12px;
+  color: white;
+  font-family: sans-serif;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 
@@ -196,13 +202,31 @@ a {
 .sentence{
   color:white;
   font-family: serif;
-  font-size: 17px;
+  font-size: 23px;
   margin: 10px 0;
   letter-spacing: 3px;
   line-height: 35px;
   background-color:rgba(140,19,25,0.6);
   padding: 15px 25px;
   border-radius: 10px;
+}
+
+.sentence-big{
+  font-size: 30px;
+}
+
+.day{
+  font-size: 21px;
+  margin-top: 18px;
+}
+
+.president-title{
+  font-size: 17px;
+  margin: 5px 0;
+}
+
+.sign-nagata{
+  width:28%;
 }
 
 
@@ -285,7 +309,7 @@ a {
   /* ---冒頭ボタン--- */
   .container{
     position: absolute;
-    bottom: 100px;
+    bottom: 70px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -309,6 +333,16 @@ a {
     width: 92px;
   }
 
+  .copyright{
+    position: absolute;
+    bottom: 50px;
+    font-size: 10px;
+    color: white;
+    font-family: sans-serif;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
 
   /* ---おみくじ--- */
   .omikuji-video{
@@ -323,21 +357,28 @@ a {
   }
 
   .result-title{
-    font-size: 20px;
+    width: 50%;
+  }
+
+  .result-title{
+    position: relative;
+    width:35%;
+    z-index: 6;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .result{
-    font-size: 65px;
-    margin-top: 35px;
+    position: relative;
+    width: 50%;
+    margin-top: 50px;
+    z-index: 6;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
-  .kaisetsu{
-    font-size: 20px;
-    font-family: serif;
-    margin-top: 20px;
-    width:85%;
-    margin: 0 auto;
-  }
 
 
   /* ---新年の挨拶--- */
@@ -353,11 +394,29 @@ a {
   }
 
   .sentence{
-    font-size: 13px;
+    font-size: 11px;
     margin: 10px 0;
     letter-spacing: 1px;
     line-height: 23px;
     padding: 8px 12px;
+  }
+
+  .sentence-big{
+    font-size: 16px;
+  }
+
+  .day{
+    font-size: 9px;
+    margin-top: 18px;
+  }
+
+  .president-title{
+    font-size: 7px;
+    margin: 5px 0;
+  }
+
+  .sign-nagata{
+    width:35%;
   }
 
   .president-name img{
