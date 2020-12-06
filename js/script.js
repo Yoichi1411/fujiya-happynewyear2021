@@ -1,10 +1,6 @@
-//jQuery記述
+//ページ読み込み前の実行プログラム
 $(function(){
 
-  //冒頭アニメーションからのボタンページフェードイン
-  setTimeout(function(){
-    $('.btn-wrapper').fadeIn(1000);
-  }, 27000);
 
 　//「新年のご挨拶」をクリック後の演出
   $('.greeting').click(function(){
@@ -95,3 +91,15 @@ $(function(){
     }
   });
 });
+
+//ページ読み込み後の実行プログラム
+window.onload = function() {
+  //ローディング画面からの切り替え
+  const loader = document.getElementById('loading-wrapper');
+  loader.classList.add('completed');
+
+  //冒頭アニメーションからのボタンページフェードイン
+  setTimeout(function(){
+    $('.btn-wrapper').fadeIn(1000);
+  }, 27000);
+}
