@@ -314,7 +314,7 @@ a {
   /* ---冒頭ボタン--- */
   .container{
     position: absolute;
-    bottom: 80px;
+    bottom: 95px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -341,7 +341,7 @@ a {
   .copyright{
     position: absolute;
     width: 80%;
-    bottom: 40px;
+    bottom: 65px;
     font-size: 8px;
     color: white;
     font-family: sans-serif;
