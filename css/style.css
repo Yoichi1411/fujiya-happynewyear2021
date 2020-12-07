@@ -147,7 +147,7 @@ a {
 .omikuji-video{
   position: relative;
   min-width: 300px;
-  max-width: 700px;
+  max-width: 550px;
   top:50%;
   transform: translateY(-50%);
   z-index: 5;
@@ -159,7 +159,7 @@ a {
   height: 100vh;
   text-align: center;
   display: none;
-  padding-top: 20%;
+  padding-top: 10%;
 }
 
 .result-title{
@@ -175,6 +175,16 @@ a {
   position: relative;
   width: 50%;
   margin-top: 50px;
+  z-index: 6;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.omikuji-hosoku{
+  position: relative;
+  width:35%;
+  margin-top: 20px;
   z-index: 6;
   display: block;
   left: 50%;
@@ -252,6 +262,7 @@ a {
   font-size: 12px;
   color: white;
   font-family: sans-serif;
+  text-align: center;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0.7;
@@ -263,11 +274,9 @@ a {
 .greeting-wrapper{
   z-index: 2;
   width:100%;
-  height: 100vh;
   display: none;
   position: relative;
   background-color: rgba(189,26,33,0.85);
-  background-size: cover;
 }
 
 .container2{
@@ -334,7 +343,8 @@ a {
 
 .totop-btn{
   position: relative;
-  margin: 80px 0;
+  margin-top: 80px;
+  margin-bottom: 200px;
   width: 160px;
   cursor: pointer;
   opacity: 0.8;

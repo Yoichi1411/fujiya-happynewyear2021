@@ -29,10 +29,16 @@ $(function(){
     },5200);
 
     //おみくじ結果の処理
-    var results = ['image/result-daikichi1.png',
-                   'image/result-chukichi1.png',
-                   'image/result-syokichi1.png',
-                   'image/result-kichi1.png'];
+    var results = ['image/daikichi1.png',
+                   'image/daikichi2.png',
+                   'image/chukichi1.png',
+                   'image/chukichi2.png',
+                   'image/chukichi3.png',
+                   'image/syokichi1.png',
+                   'image/syokichi2.png',
+                   'image/syokichi3.png',
+                   'image/kichi1.png',
+                   'image/kichi2.png'];
 
 
     var random = results[Math.floor(Math.random() * results.length)];
@@ -103,7 +109,7 @@ window.onload = function() {
   loader.classList.add('completed');
 
   //冒頭アニメーションをフェードイン
-  $('.background-wrapper').fadeIn(1000);
+
 
 
   //冒頭アニメーションからのボタンページフェードイン
