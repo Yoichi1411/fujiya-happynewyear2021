@@ -110,8 +110,8 @@ window.onload = function() {
   const loader = document.getElementById('loading-wrapper');
   loader.classList.add('completed');
 
-  //冒頭アニメーションを再生
-  $('.fitVideo').get(0).play();
+  //冒頭アニメーションをフェードイン
+
 
 
   //冒頭アニメーションからのボタンページフェードイン
