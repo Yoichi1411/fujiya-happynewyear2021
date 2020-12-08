@@ -2,6 +2,8 @@
 $(function(){
 
 
+  //ローディングページが非表示になったら動画を再生
+
 　//「新年のご挨拶」をクリック後の演出
   $('.greeting').click(function(){
     $('.btn-wrapper').fadeOut(500);
@@ -108,12 +110,12 @@ window.onload = function() {
   const loader = document.getElementById('loading-wrapper');
   loader.classList.add('completed');
 
-  //冒頭アニメーションをフェードイン
-
+  //冒頭アニメーションを再生
+  $('.fitVideo').get(0).play();
 
 
   //冒頭アニメーションからのボタンページフェードイン
   setTimeout(function(){
     $('.btn-wrapper').fadeIn(1000);
   }, 27000);
-}
+};
