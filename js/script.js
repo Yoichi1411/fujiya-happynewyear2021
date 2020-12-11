@@ -64,10 +64,10 @@ window.onload = function() {
   var media = document.getElementById("op-video");
   var media2 = document.getElementById("op-video2")
 
-  media.currentTime = 0;
+  media.currentTime = 1;
   media.play();
 
-  media2.currentTime = 0;
+  media2.currentTime = 1;
   media2.play();
 
 
