@@ -183,7 +183,7 @@ a {
 
 .omikuji-hosoku{
   position: relative;
-  width:35%;
+  width:22%;
   margin-top: 20px;
   z-index: 6;
   display: block;
@@ -411,7 +411,7 @@ a {
   /* ---冒頭ボタン--- */
   .container{
     position: absolute;
-    bottom: 180px;
+    bottom: 160px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -478,6 +478,10 @@ a {
     left: 50%;
     transform: translateX(-50%);
   }
+
+  .omikuji-hosoku{
+    width:35%;
+  };
 
   .bg-torii{
     width:85%;
