@@ -14,11 +14,13 @@ $(function(){
   $('.totop-btn').click(function(){
     $('.btn-wrapper').fadeIn(2000);
     $('.greeting-wrapper').fadeOut(500);
+    $('.omikuji-wrapper').fadeOut(500);
     $('.omikuji-result').fadeOut(500);
   });
 
   ////「おみくじを引く」をクリック後のアニメーションへの導入
   $('.omikuji-btn').click(function(){
+    $('.omikuji-video').attr('src','video/omikuji.gif');
     $('.btn-wrapper').fadeOut(500);
     $('.omikuji-wrapper').fadeIn(1000);
   });
@@ -26,7 +28,7 @@ $(function(){
   //「おみくじを引く」をクリック後のアニメーション後演出
   $('.omikuji-btn').click(function(){
     setTimeout(function(){
-      $('.omikuji-wrapper').fadeOut(500);
+      $('.omikuji-video').fadeOut(1000);
       $('.omikuji-result').fadeIn(1000);
     },5200);
 
