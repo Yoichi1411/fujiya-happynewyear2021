@@ -137,9 +137,7 @@ a {
 
 /* ---おみくじ--- */
 .omikuji-wrapper{
-  position:absolute;
-  top: 0;
-  left: 0;
+  position:relative;
   width: 100%;
   height:100vh;
   text-align: center;
@@ -156,9 +154,7 @@ a {
 }
 
 .omikuji-result{
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width:100%;
   height: 100vh;
   text-align: center;
@@ -169,48 +165,42 @@ a {
 .result-title{
   position: relative;
   width:35%;
+  z-index: 6;
   display: block;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 6;
 }
 
 .result{
   position: relative;
   width: 50%;
   margin-top: 50px;
+  z-index: 6;
   display: block;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 6;
 }
 
 .omikuji-hosoku{
   position: relative;
   width:22%;
   margin-top: 20px;
+  z-index: 6;
   display: block;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 6;
 }
 
 
 
 /*-- おみくじ背景 --*/
-#bg-wrapper{
-  position:relative;
-  width: 100%;
-  height: 100vh;
-  z-index: 2;
-}
-
 .omikuji-bg{
   position: absolute;
   top: 0;
   left: 0;
   width:100%;
   height: 100vh;
+  z-index:2;
   background-color: rgba(189,26,33,0.85);
   background-size: cover;
   display: flex;

@@ -14,7 +14,6 @@ $(function(){
   $('.totop-btn').click(function(){
     $('.btn-wrapper').fadeIn(2000);
     $('.greeting-wrapper').fadeOut(500);
-    $('.omikuji-wrapper').fadeOut(500);
     $('.omikuji-result').fadeOut(500);
   });
 
@@ -28,7 +27,7 @@ $(function(){
   //「おみくじを引く」をクリック後のアニメーション後演出
   $('.omikuji-btn').click(function(){
     setTimeout(function(){
-      $('.omikuji-video').fadeOut(1000);
+      $('.omikuji-wrapper').fadeOut(500);
       $('.omikuji-result').fadeIn(1000);
     },5200);
 
