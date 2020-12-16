@@ -29,7 +29,7 @@ $(function(){
     setTimeout(function(){
       $('.omikuji-wrapper').fadeOut(500);
       $('.omikuji-result').fadeIn(1000);
-    },5530);
+    },5650);
 
     //おみくじ結果の処理
     var results = ['image/daikichi1.png',
