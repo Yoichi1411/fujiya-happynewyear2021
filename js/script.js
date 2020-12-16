@@ -19,7 +19,7 @@ $(function(){
 
   ////「おみくじを引く」をクリック後のアニメーションへの導入
   $('.omikuji-btn').click(function(){
-    $('.omikuji-video').attr("src","video/omikuji.gif?' + (new Date).getTime() + '");
+    $('.omikuji-video').attr("src","video/omikuji.gif");
     $('.btn-wrapper').fadeOut(500);
     $('.omikuji-wrapper').fadeIn(1000);
   });
@@ -29,7 +29,7 @@ $(function(){
     setTimeout(function(){
       $('.omikuji-wrapper').fadeOut(500);
       $('.omikuji-result').fadeIn(1000);
-    },5650);
+    },5750);
 
     //おみくじ結果の処理
     var results = ['image/daikichi1.png',
