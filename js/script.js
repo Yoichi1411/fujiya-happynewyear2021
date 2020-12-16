@@ -19,7 +19,7 @@ $(function(){
 
   ////「おみくじを引く」をクリック後のアニメーションへの導入
   $('.omikuji-btn').click(function(){
-    $('.omikuji-video').attr('src','video/omikuji.gif');
+    $('.omikuji-video').attr("src","video/omikuji.gif?' + (new Date).getTime() + '");
     $('.btn-wrapper').fadeOut(500);
     $('.omikuji-wrapper').fadeIn(1000);
   });
