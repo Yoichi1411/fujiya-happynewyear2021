@@ -11,6 +11,12 @@ h1, h2, h3, h4, h5, h6, p, div {
 body {
   font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
   background: rgba(189,26,33,1);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display:none;
 }
 
 li {
@@ -362,6 +368,38 @@ a {
 
 
 
+/* --レスポンシブ-- */
+@media(max-width:1370px){
+
+  .container2{
+    width:70%;
+  }
+
+  .sentence{
+    font-size: 18px;
+  }
+
+  .sentence-big{
+    font-size: 22px;
+  }
+
+  .day{
+    font-size: 17px;
+  }
+
+  .president-title{
+    font-size: 14px;
+  }
+
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -369,6 +407,7 @@ a {
 
 /* --レスポンシブ(タブレット)-- */
 @media(max-width:992px) {
+
 
   .btn{
   	font-size: 18px;
@@ -378,6 +417,25 @@ a {
     width:130px;
     padding: 5px 0;
   }
+
+  .container2{
+    width:70%;
+  }
+
+  .sentence{
+    font-size: 15px;
+  }
+
+  .sentence-big{
+    font-size: 18px;
+  }
+
+  .day{
+    font-size: 13px;
+  }
+
+  .president-title{
+    font-size: 11px;
 
 }
 
